@@ -1,0 +1,12 @@
+.gitignore.swp
+.eprj
+.DS_Store
+.rvmrc
+!.rvmrc.example
+Thumbs.db
+log/**/*
+.bundle/config
+.bundle/environment.rb
+vendor/bundle/bin/
+vendor/bundle/gems/
+vendor/bundle/specifications/
