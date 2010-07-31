@@ -37,7 +37,7 @@ class Mecho
     def response_headers
       [ "Server: Mecho/0.0.0",
         "X-Mecho-Duration: #{duration}",
-        "" ].join("\n")
+        "\n" ].join("\n")
     end
 
     def duration
