@@ -5,7 +5,11 @@ class Mecho
       @headers    = headers_2_hash(headers)
       @content    = content
 
-      EM.defer(dispatcher, on_complete)
+      if dispatched_method = dispatcher
+        EM.defer(dispatched_method, on_complete)
+      else 
+        on_complete.call
+      end
     end
 
     def dispatcher
