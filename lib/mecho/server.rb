@@ -34,8 +34,7 @@ class Mecho
     end
 
     def write_log_message
-      puts @headers
-      puts @content
+      puts [@headers[:host], duration, @headers[:user_agent], @headers[:content_length], @content].join(" ")
     end
     
     def response_headers
